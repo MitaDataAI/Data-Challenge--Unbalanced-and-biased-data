@@ -1,4 +1,6 @@
-# Data Challenge
+# Data Challenge : Unbalanced and biased data
+![modified_combined_gender_class_inequality](https://github.com/user-attachments/assets/88b30289-6c95-4ca2-9bee-5ce595625394)
+
 
 # By RAKOTONIAINA Pety Ialimita (pety.rakotoniaina@télécom-paris.fr)
 
