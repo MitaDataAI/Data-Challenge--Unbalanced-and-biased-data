@@ -1,4 +1,4 @@
-# Data Challenge : Unbalanced and biased data
+# Data Challenge : ML with Unbalanced and biased data
 ![modified_combined_gender_class_inequality](https://github.com/user-attachments/assets/88b30289-6c95-4ca2-9bee-5ce595625394)
 
 
