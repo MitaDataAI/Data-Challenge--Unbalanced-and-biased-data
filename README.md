@@ -38,32 +38,3 @@ Since testing different models is essential for benchmarking, slow processing ca
 
 # Metrics Objective
 The operational goal is to develop a model (either individual or aggregated) that maximizes both accuracy (high Macro F1 Score) and fairness (fairness criterion close to 1).
-
-# Work Approach
-The question arises: how can we achieve our objective?
-In general, we follow various cross-cutting and recursive steps, namely: data exploration, data processing, and modeling. 
-We start with:
-
-## Data Exploration (in the DC1 document):
-Objective: Understand the dataset to define a modeling strategy.
-
-### Structural Analysis:
-- Assess the dataset’s dimensions in terms of variables and number of observations
-- Check the size of the training and test sets
-- Identify the absence of missing values
-- Identify whether variables are not standardized in the training and test sets
-
-### In-depth Analysis:
-- Detect class imbalance in the target variable
-- Detect the nature of bias: dependency between the target and gender
-
-### Important Notes:
-- The exploration phase concludes with the design of the strategy to follow throughout the classification project.
-
-## Modelization
-
-
-- For each file from DC2 to DC10, we included the conclusions at the beginning to make reading easier.
-- The best model we obtained can be downloaded from DC10.
-- There are two .py files containing the most frequently used functions throughout our work.
-
