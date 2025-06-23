@@ -38,8 +38,10 @@ During training and validation, certain indicators help approximate this trade-o
 
 
 #  Great Discovery 2: Why we need test multiple model and how we can have intuition for models to test
-According to the bias-variance trade-off, there exists an **optimal model capacity** that minimizes error **based on the complexity of the task**.
-This complexity is **theoretically defined** by the **Vapnik-Chervonenkis (VC) dimension**, which measures the model’s capacity to fit various patterns in the data.
+According to the bias-variance trade-off, there exists an **optimal model capacity** that minimizes error **based on the complexity of the task**. 
+If each model has its optimal capacity, there will be one model which is the best. The task of Data Scientist is to find this model. How?  
+
+The complexity is **theoretically defined** by the **Vapnik-Chervonenkis (VC) dimension**, which measures the model’s capacity to fit various patterns in the data.
 
 ## 📏 Learning Theory Formula:
 R(f) ≤ R_emp(f) + C(f, N)
