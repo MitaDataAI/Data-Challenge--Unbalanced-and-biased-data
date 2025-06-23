@@ -10,6 +10,19 @@ The Data Challenge follows the standard principle of a “Kaggle Competition,”
 # Goal
 The main task is to assign the correct category to a text while taking fairness into account. There are 28 different categories, making this a multi-class classification task. Each text must be classified into one and only one of these categories. 
 
+# Metrics
+## Accuracy Evaluation: Macro F1 Score
+- The F1 score is a way to measure how accurate a classification model is. It considers both precision (how many predicted positives are correct) and recall (how many actual positive cases are correctly identified). It then combines these two measures into a single one by taking their harmonic mean. 
+- It's like calculating an average that gives equal importance to both precision and recall. The Macro F1 Score is simply the average of the F1 scores for each class. This means that each class is weighted equally, regardless of how often it appears in the data.
+
+## Fairness Evaluation: Equal Opportunity Gap
+- Sensitive Attribute (S): This refers to a specific variable—here, gender—on which the model's fairness is evaluated. The idea is to ensure that the model neither unfairly favors nor disadvantages a particular group based on this attribute.
+
+- Equal Opportunity Gap: This is a fairness metric that assesses whether the true positive rates are balanced across the protected groups defined by the sensitive attribute. A model is considered fair if this gap is small. In other words, all groups should have an equal chance of being correctly classified for a positive outcome. The measure used here is 1 - the equal opportunity gap, where a perfectly fair model would have a value of 1.
+
+# Metrics Objective
+The operational goal is to develop a model (either individual or aggregated) that maximizes both accuracy (high Macro F1 Score) and fairness (fairness criterion close to 1).
+
 # Great Discovery 1 :
 One of the fundamental principles of statistical learning lies in the trade-off between bias and variance. A high bias indicates that the model is too simplistic to capture the complexity of the data, resulting in poor performance—even on the training set. Conversely, high variance reflects the model’s strong sensitivity to fluctuations in the training data. In this case, the model "overfits" the training set, compromising its ability to generalize to unseen data.
 
@@ -25,16 +38,3 @@ During training and validation, certain indicators help approximate this trade-o
 This project helped me understand how important computing power is when working with large datasets. Even though my data wasn’t very big — just 768 features and about 40,000 rows — running cross-validation with 12 parameters (like in Data Challenge 6) still took almost 4.5 hours. For more complex models, training and validation alone could take up to 2.5 hours.
 
 Since testing different models is essential for benchmarking, slow processing can waste a lot of time — time that could be better spent analyzing results or trying out new ideas. During the second Data Challenge, I started using cloud computing and parallel processing to speed things up. In this project too, using a GPU and enabling CUDA was key for faster convergence in deep learning. It’s easy to see why NVIDIA has become so valuable — advanced machine learning depends heavily on its GPUs.
-
-# Metrics
-## Accuracy Evaluation: Macro F1 Score
-- The F1 score is a way to measure how accurate a classification model is. It considers both precision (how many predicted positives are correct) and recall (how many actual positive cases are correctly identified). It then combines these two measures into a single one by taking their harmonic mean. 
-- It's like calculating an average that gives equal importance to both precision and recall. The Macro F1 Score is simply the average of the F1 scores for each class. This means that each class is weighted equally, regardless of how often it appears in the data.
-
-## Fairness Evaluation: Equal Opportunity Gap
-- Sensitive Attribute (S): This refers to a specific variable—here, gender—on which the model's fairness is evaluated. The idea is to ensure that the model neither unfairly favors nor disadvantages a particular group based on this attribute.
-
-- Equal Opportunity Gap: This is a fairness metric that assesses whether the true positive rates are balanced across the protected groups defined by the sensitive attribute. A model is considered fair if this gap is small. In other words, all groups should have an equal chance of being correctly classified for a positive outcome. The measure used here is 1 - the equal opportunity gap, where a perfectly fair model would have a value of 1.
-
-# Metrics Objective
-The operational goal is to develop a model (either individual or aggregated) that maximizes both accuracy (high Macro F1 Score) and fairness (fairness criterion close to 1).
