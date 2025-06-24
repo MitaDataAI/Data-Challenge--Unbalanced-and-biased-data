@@ -91,3 +91,9 @@ This project helped me understand how important computing power is when working 
 
 Since testing different models is essential for benchmarking, slow processing can waste a lot of time — time that could be better spent analyzing results or trying out new ideas. During the second Data Challenge, I started using cloud computing and parallel processing to speed things up. In this project too, using a GPU and enabling CUDA was key for faster convergence in deep learning. It’s easy to see why NVIDIA has become so valuable — advanced machine learning depends heavily on its GPUs.
 
+# Requirements 
+Before starting the project, make sure you have Python 3.9 or higher installed.
+To install all required dependencies, simply run:
+
+pip install -r requirements.txt
+
