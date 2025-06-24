@@ -95,5 +95,5 @@ Since testing different models is essential for benchmarking, slow processing ca
 Before starting the project, make sure you have Python 3.9 or higher installed.
 To install all required dependencies, simply run:
 
+```bash
 pip install -r requirements.txt
-
